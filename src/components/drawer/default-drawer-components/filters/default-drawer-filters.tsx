@@ -76,9 +76,7 @@ const Container = styled.div<{ isScroll: boolean }>`
   background: ${(props) => (props.isScroll ? '#fff' : 'transparent')};
 `;
 
-const fakeMainFilters = ['Все', 'Подборка 1', 'Подборка 2', 'Подборка 3'];
 const fakeSecondFilters = ['Дата', 'Жанр'];
-const fakeCommunityFilters = ['Тип', 'Интересы', 'Популярность'];
 
 interface DrawerFiltersProps {
   isScroll: boolean;
@@ -90,8 +88,7 @@ export function DrawerFiltersEvents({ isScroll }: DrawerFiltersProps) {
     selectedEventCategory,
     selectedCollectionId,
     setSelectedCollection,
-    clearSelectedCollection,
-    togglePlaceCategory,
+
   } = useStoreFilters();
   const [openDateDrawer, setOpenDateDrawer] = useState(false);
   const [openTypeDrawer, setOpenTypeDrawer] = useState(false);
