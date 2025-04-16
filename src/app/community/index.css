@@ -1,0 +1,19 @@
+@import './fonts.css';
+
+
+.community-page {
+  height: 100vh;
+  width: 100%;
+}
+
+.communities-main-page {
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #424242;
+  font-family: Inter;
+}
+
+.container {
+  padding: 16px;
+  padding-bottom: 100px;
+}
