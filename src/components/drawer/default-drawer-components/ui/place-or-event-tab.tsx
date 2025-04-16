@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { PlusIcon } from '@/shared/icons/community/plus-icon';
 import { SearchIcon } from '@/shared/icons/community/search-icon';
-import { useStoreCommunityFilters } from '@/shared/store/filters';
+import { useStoreFilters } from '@/shared/store/filters';
 import styled from '@emotion/styled';
 import Typography from '@mui/material/Typography';
 
@@ -70,7 +70,7 @@ export const PlaceOrEventTabWithoutIcons = ({ activeTab, handleClickTab }: TabPr
 };
 
 export const CommunityOrEventTab = () => {
-  const { activeTab, setActiveTab } = useStoreCommunityFilters();
+  const { activeTab, setActiveTab } = useStoreFilters();
 
   const handleClickTab = (tab: 'COMMUNITY' | 'EVENT') => {
     setActiveTab(tab);

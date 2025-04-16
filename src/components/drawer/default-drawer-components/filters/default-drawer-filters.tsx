@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 
 
 
-import { useCollectionsFilters, useEventCollectionsFilters } from '@/hooks/filters/use-all-filters';
+import {  useEventCollectionsFilters } from '@/hooks/filters/use-all-filters';
 
 
 

@@ -1,4 +1,4 @@
-import { DrawerCommunityFilters } from '@/components/drawer/default-drawer-components/filters/default-drawer-filters';
+import { DrawerFiltersEvents } from '@/components/drawer/default-drawer-components/filters/default-drawer-filters';
 
 import './index.css';
 
@@ -11,7 +11,7 @@ export default function Page(): React.JSX.Element {
   return (
     <div className="communities-main-page container">
       <CommunityOrEventTab />
-      <DrawerCommunityFilters isScroll={false} />
+      <DrawerFiltersEvents isScroll={false} />
       <GrayBlockArrow/>
       <CommunityMainBody/>
       <DrawerFooter drawerState='nofull'/>
